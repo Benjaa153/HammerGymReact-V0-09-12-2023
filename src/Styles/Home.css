@@ -1,0 +1,102 @@
+/*=============== HOME ===============*/
+.home{
+  position: relative;
+  padding-bottom: 0;
+}
+.home-container{
+  padding-top: 4rem;
+  row-gap: 3rem;
+}
+.home_data{
+  text-align: center;
+}
+.home_subtitle{
+  font-size: var(--bigger-font-size);
+  -webkit-text-stroke: 1px var(--title-color);
+  color: transparent;
+}
+.home_title{
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-black);
+  color: #FA8403;
+  margin: .5rem 0; 
+}
+.home_subtitle,
+.home_title{
+  letter-spacing: 1.5px;
+}
+.home_description{
+  margin-bottom: 2.5rem;
+}
+.home_triangle{
+  height: 325px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+  z-index: -1;
+}
+
+.home_triangle-1{
+  width: 105px;
+  background-color: var(--first-color);
+}
+.home_triangle-2{
+  width: 205px;
+  background-color: var(--first-color-alt);
+}
+.home_triangle-3{
+  width: 305px;
+  background-color: var(--first-color-dark);
+}
+
+.home_img{
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 350px;
+  margin: 0 auto;
+}
+
+/*=============== BUTTON ===============*/
+.button {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: var(--font-bold);
+  letter-spacing: 1px;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  /* background-color: var(--first-color); */
+  background-color: #FA8403 ;
+  color: white;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  bottom: -rem;
+}
+
+.button:after {
+  content: "";
+  background-color: var(--text-color-light);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 13px 50px 13px;
+  }
+}
